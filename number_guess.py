@@ -3,7 +3,9 @@ import random
 random_number = random.randrange(1,11)
 print(random_number)
 
+guess_num = 0
 while True:
+        guess_num += 1
         guess = (input("Guess the number: "))
         if guess.isdigit():
             guess = int(guess)
@@ -18,6 +20,6 @@ while True:
         else:
             print("Your guess is correct!") 
             break
-
+print("You got it in", guess_num, "guesses")
                 
 
