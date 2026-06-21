@@ -2,6 +2,7 @@
 
 perm = input("Do you want to play the game? ").lower()
 score = 0
+percen = 0
 
 
 if perm == "yes":
@@ -20,8 +21,13 @@ if perm == "yes":
     if quiz_3 == "long short term memory":
         print("You are correct!")
         score +=1
+    percen = (score/3) *100
 else:
     quit()
 
 
-print(f"You got {score} correct.")
+
+
+
+
+print(f"You got {percen}%  correct.")
